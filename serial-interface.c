@@ -7,6 +7,8 @@
 #include "contiki.h"
 #include "dev/serial-line.h"
 #include "buzzer.h"
+#include "sys/timer.h"
+#include "dev/leds.h"
 #include <stdio.h> /* For printf() */
 #include "dev/cc26xx-uart.h"
 #include "ieee-addr.h"
@@ -37,10 +39,11 @@ PROCESS_THREAD(test_serial, ev, data) {
 		//last character, to tigger the event.
 		//******************************************
 		if(ev == serial_line_event_message) {
+			
        		printf("received line: %s\n\r", (char *)data);
 			buzzer_start(1000);
 
-     	}
+     		}
 		
 
 		clock_wait(CLOCK_SECOND/10);

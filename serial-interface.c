@@ -10,6 +10,7 @@
 #include "sys/timer.h"
 #include "dev/leds.h"
 #include <stdio.h> /* For printf() */
+#include <string.h>
 #include "dev/cc26xx-uart.h"
 #include "ieee-addr.h"
 
@@ -39,9 +40,19 @@ PROCESS_THREAD(test_serial, ev, data) {
 		//last character, to tigger the event.
 		//******************************************
 		if(ev == serial_line_event_message) {
-			
-       		printf("received line: %s\n\r", (char *)data);
-			buzzer_start(1000);
+		
+       			printf("received line: %s\n\r", (char *)data);
+			if(strcmp((char *)data,"r")){
+				leds_on(LEDS_RED);
+			}
+			if(strcmp((char *)data,"g")){
+				leds_on(LEDS_GREEN);
+			}
+			if(strcmp((char *)data,"a")){
+				leds_on(LEDS_ALL);
+			}
+			//buzzer_start(1000);
+
 
      		}
 		

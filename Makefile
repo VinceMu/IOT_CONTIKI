@@ -1,4 +1,4 @@
-CONTIKI_PROJECT = serial-interface
+CONTIKI_PROJECT = prac1
 all: $(CONTIKI_PROJECT)
 
 CONTIKI = $(HOME)/contiki-git

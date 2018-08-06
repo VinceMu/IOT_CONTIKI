@@ -25,7 +25,7 @@ contiki-srf06-cc26xx.a(button-sensor.o)
 contiki-srf06-cc26xx.a(reed-relay.o)
                               contiki-srf06-cc26xx.a(sensortag-senso) (reed_relay_sensor)
 contiki-srf06-cc26xx.a(buzzer.o)
-                              serial-interface.co (buzzer_start)
+                              prac1.co (buzzer_start)
 contiki-srf06-cc26xx.a(board.o)
                               contiki-srf06-cc26xx.a(contiki-main.o) (board_init)
 contiki-srf06-cc26xx.a(board-i2c.o)
@@ -41,7 +41,7 @@ contiki-srf06-cc26xx.a(contiki-watchdo)
 contiki-srf06-cc26xx.a(putchar.o)
                               contiki-srf06-cc26xx.a(contiki-main.o) (putchar)
 contiki-srf06-cc26xx.a(ieee-addr.o)
-                              serial-interface.co (ieee_addr_cpy_to)
+                              prac1.co (ieee_addr_cpy_to)
 contiki-srf06-cc26xx.a(cc26xx-uart.o)
                               contiki-srf06-cc26xx.a(contiki-main.o) (cc26xx_uart_init)
 contiki-srf06-cc26xx.a(lpm.o)
@@ -71,7 +71,7 @@ contiki-srf06-cc26xx.a(rtimer.o)
 contiki-srf06-cc26xx.a(timer.o)
                               contiki-srf06-cc26xx.a(button-sensor.o) (timer_set)
 contiki-srf06-cc26xx.a(serial-line.o)
-                              serial-interface.co (serial_line_event_message)
+                              prac1.co (serial_line_event_message)
 contiki-srf06-cc26xx.a(list.o)
                               contiki-srf06-cc26xx.a(lpm.o) (list_init)
 contiki-srf06-cc26xx.a(random.o)
@@ -229,7 +229,7 @@ contiki-srf06-cc26xx.a(mac-sequence.o)
 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-rand.o)
                               contiki-srf06-cc26xx.a(random.o) (srand)
 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strcmp.o)
-                              serial-interface.co (strcmp)
+                              prac1.co (strcmp)
 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
                               contiki-srf06-cc26xx.a(sensors.o) (strlen)
 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strncmp.o)
@@ -265,7 +265,7 @@ uip_conn            0x4               contiki-srf06-cc26xx.a(uip6.o)
 tcpip_event         0x1               contiki-srf06-cc26xx.a(tcpip.o)
 uip_conns           0x1e0             contiki-srf06-cc26xx.a(uip6.o)
 uip_icmp6_conns     0x8               contiki-srf06-cc26xx.a(uip6.o)
-addr                0x100             serial-interface.co
+addr                0x100             prac1.co
 t0                  0x4               contiki-srf06-cc26xx.a(mpu-9250-sensor)
 uip_listenports     0x28              contiki-srf06-cc26xx.a(uip6.o)
 sensors_flags       0x9               contiki-srf06-cc26xx.a(sensortag-senso)
@@ -289,10 +289,10 @@ Discarded input sections
  .bss           0x00000000        0x0 obj_srf06-cc26xx/startup_gcc.o
  .text.FaultISRHandler
                 0x00000000        0x4 obj_srf06-cc26xx/startup_gcc.o
- .text          0x00000000        0x0 serial-interface.co
- .data          0x00000000        0x0 serial-interface.co
- .bss           0x00000000        0x0 serial-interface.co
- COMMON         0x00000000      0x100 serial-interface.co
+ .text          0x00000000        0x0 prac1.co
+ .data          0x00000000        0x0 prac1.co
+ .bss           0x00000000        0x0 prac1.co
+ COMMON         0x00000000      0x100 prac1.co
  .text          0x00000000        0x0 contiki-srf06-cc26xx.a(contiki-main.o)
  .data          0x00000000        0x0 contiki-srf06-cc26xx.a(contiki-main.o)
  .bss           0x00000000        0x0 contiki-srf06-cc26xx.a(contiki-main.o)
@@ -943,7 +943,7 @@ Linker script and memory map
 LOAD obj_srf06-cc26xx/fault-handlers.o
 LOAD obj_srf06-cc26xx/ccfg.o
 LOAD obj_srf06-cc26xx/startup_gcc.o
-LOAD serial-interface.co
+LOAD prac1.co
 LOAD contiki-srf06-cc26xx.a
 LOAD /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libm.a
 START GROUP
@@ -1018,13 +1018,13 @@ END GROUP
                 0x00000f7c       0x5c obj_srf06-cc26xx/startup_gcc.o
                 0x00000f7c                ResetISR
  .text.do_itimer
-                0x00000fd8       0x14 serial-interface.co
+                0x00000fd8       0x14 prac1.co
                 0x00000fd8                do_itimer
  .text.do_dtimer
-                0x00000fec       0x14 serial-interface.co
+                0x00000fec       0x14 prac1.co
                 0x00000fec                do_dtimer
  .text.process_thread_test_serial
-                0x00001000      0x14c serial-interface.co
+                0x00001000      0x14c prac1.co
  .text.fade     0x0000114c       0x64 contiki-srf06-cc26xx.a(contiki-main.o)
  .text.startup.main
                 0x000011b0      0x1e4 contiki-srf06-cc26xx.a(contiki-main.o)
@@ -2385,10 +2385,10 @@ END GROUP
  .rodata.bp     0x00010040       0x10 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-e_pow.o)
  .rodata.TWO52  0x00010050       0x10 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libm.a(lib_a-s_rint.o)
  .rodata.autostart_processes
-                0x00010060        0x8 serial-interface.co
+                0x00010060        0x8 prac1.co
                 0x00010060                autostart_processes
  .rodata.str1.4
-                0x00010068       0x31 serial-interface.co
+                0x00010068       0x31 prac1.co
                                  0x35 (size before relaxing)
  *fill*         0x00010099        0x3 00000000
  .rodata.str1.4
@@ -2548,10 +2548,10 @@ END GROUP
  .data.impure_data
                 0x20000000      0x428 /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
  .data.test_serial
-                0x20000428       0x10 serial-interface.co
+                0x20000428       0x10 prac1.co
                 0x20000428                test_serial
  .data.buzz_freq
-                0x20000438        0x4 serial-interface.co
+                0x20000438        0x4 prac1.co
                 0x20000438                buzz_freq
  .data.sensors_process
                 0x2000043c       0x10 contiki-srf06-cc26xx.a(sensors.o)
@@ -2662,10 +2662,10 @@ END GROUP
  *(SORT(.bss*))
  .bss.count     0x20000660        0x8 contiki-srf06-cc26xx.a(clock.o)
  .bss.buzz_state
-                0x20000668        0x4 serial-interface.co
+                0x20000668        0x4 prac1.co
                 0x20000668                buzz_state
- .bss.dtimer    0x2000066c       0x20 serial-interface.co
- .bss.itimer    0x2000068c       0x20 serial-interface.co
+ .bss.dtimer    0x2000066c       0x20 prac1.co
+ .bss.itimer    0x2000068c       0x20 prac1.co
  .bss.i.4813    0x200006ac        0x4 contiki-srf06-cc26xx.a(sensors.o)
  .bss.events.4814
                 0x200006b0        0x4 contiki-srf06-cc26xx.a(sensors.o)
@@ -3022,14 +3022,14 @@ END GROUP
                 0x20003564                . = ALIGN (0x4)
 
 .gpram
-OUTPUT(serial-interface.elf elf32-littlearm)
+OUTPUT(prac1.elf elf32-littlearm)
 
 .comment        0x00000000       0x70
  .comment       0x00000000       0x70 obj_srf06-cc26xx/fault-handlers.o
                                  0x71 (size before relaxing)
  .comment       0x00000000       0x71 obj_srf06-cc26xx/ccfg.o
  .comment       0x00000000       0x71 obj_srf06-cc26xx/startup_gcc.o
- .comment       0x00000000       0x71 serial-interface.co
+ .comment       0x00000000       0x71 prac1.co
  .comment       0x00000000       0x71 contiki-srf06-cc26xx.a(contiki-main.o)
  .comment       0x00000000       0x71 contiki-srf06-cc26xx.a(sensors.o)
  .comment       0x00000000       0x71 contiki-srf06-cc26xx.a(leds.o)
@@ -3122,7 +3122,7 @@ OUTPUT(serial-interface.elf elf32-littlearm)
  .ARM.attributes
                 0x00000066       0x33 obj_srf06-cc26xx/startup_gcc.o
  .ARM.attributes
-                0x00000099       0x33 serial-interface.co
+                0x00000099       0x33 prac1.co
  .ARM.attributes
                 0x000000cc       0x33 contiki-srf06-cc26xx.a(contiki-main.o)
  .ARM.attributes
@@ -3644,9 +3644,9 @@ _global_impure_ptr                                /usr/bin/../lib/gcc/arm-none-e
 _impure_ptr                                       /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-impure.o)
                                                   /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-rand.o)
                                                   /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-errno.o)
-addr                                              serial-interface.co
+addr                                              prac1.co
 autostart_exit                                    contiki-srf06-cc26xx.a(autostart.o)
-autostart_processes                               serial-interface.co
+autostart_processes                               prac1.co
                                                   contiki-srf06-cc26xx.a(contiki-main.o)
 autostart_start                                   contiki-srf06-cc26xx.a(autostart.o)
                                                   contiki-srf06-cc26xx.a(contiki-main.o)
@@ -3687,22 +3687,22 @@ button_left_sensor                                contiki-srf06-cc26xx.a(button-
                                                   contiki-srf06-cc26xx.a(sensortag-senso)
 button_right_sensor                               contiki-srf06-cc26xx.a(button-sensor.o)
                                                   contiki-srf06-cc26xx.a(sensortag-senso)
-buzz_freq                                         serial-interface.co
-buzz_state                                        serial-interface.co
+buzz_freq                                         prac1.co
+buzz_state                                        prac1.co
 buzzer_init                                       contiki-srf06-cc26xx.a(buzzer.o)
                                                   contiki-srf06-cc26xx.a(board.o)
 buzzer_start                                      contiki-srf06-cc26xx.a(buzzer.o)
-                                                  serial-interface.co
+                                                  prac1.co
 buzzer_state                                      contiki-srf06-cc26xx.a(buzzer.o)
 buzzer_stop                                       contiki-srf06-cc26xx.a(buzzer.o)
                                                   contiki-srf06-cc26xx.a(board.o)
-                                                  serial-interface.co
+                                                  prac1.co
 cc26xx_uart_busy                                  contiki-srf06-cc26xx.a(cc26xx-uart.o)
                                                   contiki-srf06-cc26xx.a(putchar.o)
 cc26xx_uart_init                                  contiki-srf06-cc26xx.a(cc26xx-uart.o)
                                                   contiki-srf06-cc26xx.a(contiki-main.o)
 cc26xx_uart_set_input                             contiki-srf06-cc26xx.a(cc26xx-uart.o)
-                                                  serial-interface.co
+                                                  prac1.co
 cc26xx_uart_write_byte                            contiki-srf06-cc26xx.a(cc26xx-uart.o)
                                                   contiki-srf06-cc26xx.a(putchar.o)
 clock_delay                                       contiki-srf06-cc26xx.a(clock.o)
@@ -3724,7 +3724,7 @@ clock_update                                      contiki-srf06-cc26xx.a(clock.o
                                                   contiki-srf06-cc26xx.a(lpm.o)
                                                   contiki-srf06-cc26xx.a(soc-rtc.o)
 clock_wait                                        contiki-srf06-cc26xx.a(clock.o)
-                                                  serial-interface.co
+                                                  prac1.co
 contikimac_debug_print                            contiki-srf06-cc26xx.a(contikimac.o)
 contikimac_driver                                 contiki-srf06-cc26xx.a(contikimac.o)
                                                   contiki-srf06-cc26xx.a(rf-core.o)
@@ -3754,7 +3754,7 @@ ctimer_set                                        contiki-srf06-cc26xx.a(ctimer.
                                                   contiki-srf06-cc26xx.a(opt-3001-sensor)
                                                   contiki-srf06-cc26xx.a(tmp-007-sensor.)
                                                   contiki-srf06-cc26xx.a(bmp-280-sensor.)
-                                                  serial-interface.co
+                                                  prac1.co
 ctimer_set_with_process                           contiki-srf06-cc26xx.a(ctimer.o)
 ctimer_stop                                       contiki-srf06-cc26xx.a(ctimer.o)
                                                   contiki-srf06-cc26xx.a(contikimac.o)
@@ -3783,8 +3783,8 @@ dio_output                                        contiki-srf06-cc26xx.a(rpl-icm
                                                   contiki-srf06-cc26xx.a(rpl-timers.o)
 dis_output                                        contiki-srf06-cc26xx.a(rpl-icmp6.o)
                                                   contiki-srf06-cc26xx.a(rpl-timers.o)
-do_dtimer                                         serial-interface.co
-do_itimer                                         serial-interface.co
+do_dtimer                                         prac1.co
+do_itimer                                         prac1.co
 ds6_neighbors                                     contiki-srf06-cc26xx.a(uip-ds6-nbr.o)
                                                   contiki-srf06-cc26xx.a(rpl-dag.o)
 energest_flush                                    contiki-srf06-cc26xx.a(energest.o)
@@ -3870,7 +3870,7 @@ hdc_1000_sensor                                   contiki-srf06-cc26xx.a(hdc-100
 icmp6_new                                         contiki-srf06-cc26xx.a(tcpip.o)
 ieee_addr_cpy_to                                  contiki-srf06-cc26xx.a(ieee-addr.o)
                                                   contiki-srf06-cc26xx.a(contiki-main.o)
-                                                  serial-interface.co
+                                                  prac1.co
 ieee_mode_driver                                  contiki-srf06-cc26xx.a(ieee-mode.o)
                                                   contiki-srf06-cc26xx.a(rf-ble.o)
                                                   contiki-srf06-cc26xx.a(rf-core.o)
@@ -3896,7 +3896,7 @@ leds_on                                           contiki-srf06-cc26xx.a(leds.o)
                                                   contiki-srf06-cc26xx.a(contiki-main.o)
 leds_set                                          contiki-srf06-cc26xx.a(leds.o)
 leds_toggle                                       contiki-srf06-cc26xx.a(leds.o)
-                                                  serial-interface.co
+                                                  prac1.co
 linkaddr_cmp                                      contiki-srf06-cc26xx.a(linkaddr.o)
                                                   contiki-srf06-cc26xx.a(mac-sequence.o)
                                                   contiki-srf06-cc26xx.a(contikimac.o)
@@ -4481,11 +4481,11 @@ sensors_next                                      contiki-srf06-cc26xx.a(sensors
 sensors_process                                   contiki-srf06-cc26xx.a(sensors.o)
                                                   contiki-srf06-cc26xx.a(contiki-main.o)
 serial_line_event_message                         contiki-srf06-cc26xx.a(serial-line.o)
-                                                  serial-interface.co
+                                                  prac1.co
 serial_line_init                                  contiki-srf06-cc26xx.a(serial-line.o)
                                                   contiki-srf06-cc26xx.a(contiki-main.o)
 serial_line_input_byte                            contiki-srf06-cc26xx.a(serial-line.o)
-                                                  serial-interface.co
+                                                  prac1.co
 serial_line_process                               contiki-srf06-cc26xx.a(serial-line.o)
 sicslowpan_driver                                 contiki-srf06-cc26xx.a(sicslowpan.o)
                                                   contiki-srf06-cc26xx.a(nullsec.o)
@@ -4519,7 +4519,7 @@ stimer_set                                        contiki-srf06-cc26xx.a(stimer.
                                                   contiki-srf06-cc26xx.a(uip-ds6-nbr.o)
                                                   contiki-srf06-cc26xx.a(uip-ds6.o)
 strcmp                                            /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strcmp.o)
-                                                  serial-interface.co
+                                                  prac1.co
 strlen                                            /usr/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc.a(lib_a-strlen.o)
                                                   contiki-srf06-cc26xx.a(rf-ble.o)
                                                   contiki-srf06-cc26xx.a(putchar.o)
@@ -4548,7 +4548,7 @@ tcpip_set_outputfunc                              contiki-srf06-cc26xx.a(tcpip.o
                                                   contiki-srf06-cc26xx.a(sicslowpan.o)
 tcpip_uipcall                                     contiki-srf06-cc26xx.a(tcpip.o)
                                                   contiki-srf06-cc26xx.a(uip6.o)
-test_serial                                       serial-interface.co
+test_serial                                       prac1.co
 timer_expired                                     contiki-srf06-cc26xx.a(timer.o)
                                                   contiki-srf06-cc26xx.a(sicslowpan.o)
                                                   contiki-srf06-cc26xx.a(etimer.o)

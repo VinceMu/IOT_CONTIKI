@@ -18,20 +18,29 @@
 #include "sys/rtimer.h"
 unsigned char addr[256];
 int buzz_state = 0; 
-int buzz_freq = 100000;
+int buzz_freq = 1000;
+int led_colour = -1;
+int led_toggle = 0; 
 
 static struct ctimer dtimer;
 static struct ctimer itimer;
+static struct ctimer ledtimer; 
 /*---------------------------------------------------------------------------*/
 PROCESS(test_serial, "Serial line test process");
 AUTOSTART_PROCESSES(&test_serial);
 /*---------------------------------------------------------------------------*/
 
 void do_itimer(){
-	buzz_freq -=50000;
+	buzz_freq -=50;
+	buzzer_start(buzz_freq);
 }
 void do_dtimer(){
-	buzz_freq +=50000;
+	buzz_freq +=50;
+	buzzer_start(buzz_freq);
+}
+void do_ledtimer(){
+	leds_toggle(led_colour);
+	ctimer_reset(&ledtimer);
 }
 
 //Serial Interface
@@ -54,19 +63,49 @@ PROCESS_THREAD(test_serial, ev, data) {
 		//last character, to tigger the event.
 		//******************************************
 		if(ev == serial_line_event_message) {
-		
+		        printf("received line: %s\n\r", (char *)data);
 
-			if(strcmp((char *)data,"r")){
-				leds_toggle(LEDS_RED);
+			if(!strcmp((char *)data,"r")){
+
+				if(led_toggle ==1){
+
+					led_toggle = 0;
+					led_colour = LEDS_RED;
+					ctimer_set(&ledtimer,CLOCK_SECOND /2,do_ledtimer,NULL);
+				}else if(led_toggle ==0){
+					led_toggle =1;
+					ctimer_stop(&ledtimer);
+				}
+
+				
+				
 			}
-			if(strcmp((char *)data,"g")){
-				leds_toggle(LEDS_GREEN);
+			if(!strcmp((char *)data,"g")){
+
+				if(led_toggle ==1){
+
+					led_toggle = 0;
+					led_colour = LEDS_GREEN;
+					ctimer_set(&ledtimer,CLOCK_SECOND /2,do_ledtimer,NULL);
+				}else if(led_toggle ==0){
+					led_toggle =1;
+					ctimer_stop(&ledtimer);
+				}
+
 			}
-			if(strcmp((char *)data,"a")){
-				leds_toggle(LEDS_ALL);
+			if(!strcmp((char *)data,"a")){
+					if(led_toggle ==1){
+					led_toggle = 0;
+					led_colour = LEDS_ALL;
+					ctimer_set(&ledtimer,CLOCK_SECOND /2,do_ledtimer,NULL);
+				}else if(led_toggle ==0){
+					led_toggle =1;
+					ctimer_stop(&ledtimer);
+				}
 			}
-			if(strcmp((char *)data,"b")){
+			if(!strcmp((char *)data,"b")){
 				if(buzz_state ==0){
+				 printf("starting buzzer\n");
 				   buzzer_start(buzz_freq);
 				   buzz_state =1;
 				}else if(buzz_state ==1){
@@ -74,23 +113,25 @@ PROCESS_THREAD(test_serial, ev, data) {
 				   buzz_state = 0; 				
 				}
 			}
-			if(strcmp((char *)data,"i")){
+			if(!strcmp((char *)data,"i")){
 				ctimer_set(&itimer,CLOCK_SECOND *5,do_itimer,NULL);
-				buzz_freq += 50000;
+				buzz_freq += 50;
+				buzzer_start(buzz_freq);
 				
 			}
-			if(strcmp((char *)data,"d")){
+			if(!strcmp((char *)data,"d")){
 				ctimer_set(&dtimer,CLOCK_SECOND *5,do_dtimer,NULL);
-				buzz_freq -= 50000;
+				buzz_freq -= 50;
+				buzzer_start(buzz_freq);
 			}
-			if(strcmp((char *)data,"n")){
-				uint8_t* dst = NULL;
-				for(int i=0;i<5;i++){
-					ieee_addr_cpy_to (dst, i);
-				}
+			if(!strcmp((char *)data,"n")){
+				uint8_t* dst;
+
+				ieee_addr_cpy_to (dst, 8);
+				
 				printf("MAC: %02x:%02x:%02x:%02x:%02x:%02x\n",
-					 dst[0] & 0xff, dst[1] & 0xff, dst[2] & 0xff,
-					 dst[3] & 0xff, dst[4] & 0xff, dst[5] & 0xff);
+					 dst[0] , dst[1] , dst[2],
+					 dst[3] , dst[4], dst[5]);
 				
 			}
 

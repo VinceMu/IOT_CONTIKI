@@ -1,8 +1,8 @@
-CONTIKI_PROJECT = prac2
+CONTIKI_PROJECT = prac1
 all: $(CONTIKI_PROJECT)
 
 CONTIKI = $(HOME)/contiki-git
-CONTIKI_WITH_IPV6 = 1
+DEFINES=CC26XX_UART_CONF_ENABLE
 include $(CONTIKI)/Makefile.include
 
 erase: 

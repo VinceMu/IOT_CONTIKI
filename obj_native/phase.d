@@ -16,8 +16,6 @@ obj_native/phase.o: /home/comp6733/contiki-git/core/net/mac/phase.c \
  /home/comp6733/contiki-git/core/./net/mac/mac.h \
  /home/comp6733/contiki-git/core/./dev/radio.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
- /home/comp6733/contiki-git/core/./net/mac/framer.h \
- /home/comp6733/contiki-git/core/./net/packetbuf.h \
  /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
  /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/ip/uip.h \
@@ -42,6 +40,8 @@ obj_native/phase.o: /home/comp6733/contiki-git/core/net/mac/phase.c \
  /home/comp6733/contiki-git/core/./sys/loader.h \
  /home/comp6733/contiki-git/core/./sys/clock.h \
  /home/comp6733/contiki-git/core/./sys/energest.h \
+ /home/comp6733/contiki-git/core/./net/mac/framer.h \
+ /home/comp6733/contiki-git/core/./net/packetbuf.h \
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h \
  /home/comp6733/contiki-git/core/./sys/ctimer.h \
  /home/comp6733/contiki-git/core/./net/queuebuf.h \
@@ -64,8 +64,6 @@ obj_native/phase.o: /home/comp6733/contiki-git/core/net/mac/phase.c \
  /home/comp6733/contiki-git/core/./net/mac/mac.h :
  /home/comp6733/contiki-git/core/./dev/radio.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
- /home/comp6733/contiki-git/core/./net/mac/framer.h :
- /home/comp6733/contiki-git/core/./net/packetbuf.h :
  /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
  /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/ip/uip.h :
@@ -90,6 +88,8 @@ obj_native/phase.o: /home/comp6733/contiki-git/core/net/mac/phase.c \
  /home/comp6733/contiki-git/core/./sys/loader.h :
  /home/comp6733/contiki-git/core/./sys/clock.h :
  /home/comp6733/contiki-git/core/./sys/energest.h :
+ /home/comp6733/contiki-git/core/./net/mac/framer.h :
+ /home/comp6733/contiki-git/core/./net/packetbuf.h :
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h :
  /home/comp6733/contiki-git/core/./sys/ctimer.h :
  /home/comp6733/contiki-git/core/./net/queuebuf.h :

@@ -35,6 +35,7 @@ obj_native/uip-udp-packet.o: \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-engines.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-route.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/smrf.h \
+ /home/comp6733/contiki-git/core/./net/ipv6/multicast/esmrf.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/roll-tm.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-stats.h
  /home/comp6733/contiki-git/core/net/ip/uip-udp-packet.c :
@@ -73,5 +74,6 @@ obj_native/uip-udp-packet.o: \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-engines.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-route.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/smrf.h :
+ /home/comp6733/contiki-git/core/./net/ipv6/multicast/esmrf.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/roll-tm.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-stats.h :

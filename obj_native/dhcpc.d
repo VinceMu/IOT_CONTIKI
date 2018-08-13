@@ -53,6 +53,8 @@ obj_native/dhcpc.o: /home/comp6733/contiki-git/core/net/ip/dhcpc.c \
  /home/comp6733/contiki-git/core/./net/mac/mac.h \
  /home/comp6733/contiki-git/core/./dev/radio.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/mac/framer.h \
  /home/comp6733/contiki-git/core/./lib/list.h \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h \
@@ -78,8 +80,6 @@ obj_native/dhcpc.o: /home/comp6733/contiki-git/core/net/ip/dhcpc.c \
  /home/comp6733/contiki-git/core/./net/rime/broadcast.h \
  /home/comp6733/contiki-git/core/./net/rime/abc.h \
  /home/comp6733/contiki-git/core/./net/packetbuf.h \
- /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
- /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h \
  /home/comp6733/contiki-git/core/./net/rime/channel.h \
  /home/comp6733/contiki-git/core/./net/rime/chameleon.h \
@@ -159,6 +159,8 @@ obj_native/dhcpc.o: /home/comp6733/contiki-git/core/net/ip/dhcpc.c \
  /home/comp6733/contiki-git/core/./net/mac/mac.h :
  /home/comp6733/contiki-git/core/./dev/radio.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/mac/framer.h :
  /home/comp6733/contiki-git/core/./lib/list.h :
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h :
@@ -184,8 +186,6 @@ obj_native/dhcpc.o: /home/comp6733/contiki-git/core/net/ip/dhcpc.c \
  /home/comp6733/contiki-git/core/./net/rime/broadcast.h :
  /home/comp6733/contiki-git/core/./net/rime/abc.h :
  /home/comp6733/contiki-git/core/./net/packetbuf.h :
- /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
- /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h :
  /home/comp6733/contiki-git/core/./net/rime/channel.h :
  /home/comp6733/contiki-git/core/./net/rime/chameleon.h :

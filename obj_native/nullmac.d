@@ -7,7 +7,9 @@ obj_native/nullmac.o: /home/comp6733/contiki-git/core/net/mac/nullmac.c \
  /home/comp6733/contiki-git/core/./net/netstack.h \
  /home/comp6733/contiki-git/core/./net/llsec/llsec.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
- /home/comp6733/contiki-git/core/./net/mac/framer.h \
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
+ /home/comp6733/contiki-git/core/./net/linkaddr.h \
  /home/comp6733/contiki-git/core/./net/ip/uip.h \
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h \
  /home/comp6733/contiki-git/core/./net/ip/tcpip.h \
@@ -36,10 +38,8 @@ obj_native/nullmac.o: /home/comp6733/contiki-git/core/net/mac/nullmac.c \
  /home/comp6733/contiki-git/core/./sys/clock.h \
  /home/comp6733/contiki-git/core/./sys/energest.h \
  /home/comp6733/contiki-git/core/./sys/rtimer.h \
+ /home/comp6733/contiki-git/core/./net/mac/framer.h \
  /home/comp6733/contiki-git/core/./net/packetbuf.h \
- /home/comp6733/contiki-git/core/./net/linkaddr.h \
- /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
- /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h
 /home/comp6733/contiki-git/core/net/mac/nullmac.c :
  /home/comp6733/contiki-git/core/./net/mac/nullmac.h :
@@ -50,7 +50,9 @@ obj_native/nullmac.o: /home/comp6733/contiki-git/core/net/mac/nullmac.c \
  /home/comp6733/contiki-git/core/./net/netstack.h :
  /home/comp6733/contiki-git/core/./net/llsec/llsec.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
- /home/comp6733/contiki-git/core/./net/mac/framer.h :
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
+ /home/comp6733/contiki-git/core/./net/linkaddr.h :
  /home/comp6733/contiki-git/core/./net/ip/uip.h :
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h :
  /home/comp6733/contiki-git/core/./net/ip/tcpip.h :
@@ -79,8 +81,6 @@ obj_native/nullmac.o: /home/comp6733/contiki-git/core/net/mac/nullmac.c \
  /home/comp6733/contiki-git/core/./sys/clock.h :
  /home/comp6733/contiki-git/core/./sys/energest.h :
  /home/comp6733/contiki-git/core/./sys/rtimer.h :
+ /home/comp6733/contiki-git/core/./net/mac/framer.h :
  /home/comp6733/contiki-git/core/./net/packetbuf.h :
- /home/comp6733/contiki-git/core/./net/linkaddr.h :
- /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
- /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h :

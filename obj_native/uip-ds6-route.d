@@ -41,13 +41,16 @@ obj_native/uip-ds6-route.o: \
  /home/comp6733/contiki-git/core/./net/mac/mac.h \
  /home/comp6733/contiki-git/core/./dev/radio.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/mac/framer.h \
  /home/comp6733/contiki-git/core/./lib/list.h \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h \
  /home/comp6733/contiki-git/core/./net/ip/uip-packetqueue.h \
  /home/comp6733/contiki-git/core/./sys/ctimer.h \
  /home/comp6733/contiki-git/core/./lib/memb.h \
- /home/comp6733/contiki-git/core/./net/ip/uip-debug.h
+ /home/comp6733/contiki-git/core/./net/ip/uip-debug.h \
+ /home/comp6733/contiki-git/core/./net/net-debug.h
  /home/comp6733/contiki-git/core/net/ipv6/uip-ds6-route.c :
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6.h :
  /home/comp6733/contiki-git/core/./net/ip/uip.h :
@@ -90,6 +93,8 @@ obj_native/uip-ds6-route.o: \
  /home/comp6733/contiki-git/core/./net/mac/mac.h :
  /home/comp6733/contiki-git/core/./dev/radio.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/mac/framer.h :
  /home/comp6733/contiki-git/core/./lib/list.h :
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h :
@@ -97,3 +102,4 @@ obj_native/uip-ds6-route.o: \
  /home/comp6733/contiki-git/core/./sys/ctimer.h :
  /home/comp6733/contiki-git/core/./lib/memb.h :
  /home/comp6733/contiki-git/core/./net/ip/uip-debug.h :
+ /home/comp6733/contiki-git/core/./net/net-debug.h :

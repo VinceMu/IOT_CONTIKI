@@ -35,6 +35,11 @@ obj_native/nbr-table.o: /home/comp6733/contiki-git/core/net/nbr-table.c \
  /home/comp6733/contiki-git/core/./net/mac/mac.h \
  /home/comp6733/contiki-git/core/./dev/radio.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
+ /home/comp6733/contiki-git/core/./net/ip/uip.h \
+ /home/comp6733/contiki-git/core/./net/ip/uipopt.h \
+ /home/comp6733/contiki-git/core/./net/ip/tcpip.h \
  /home/comp6733/contiki-git/core/./net/mac/framer.h
 /home/comp6733/contiki-git/core/net/nbr-table.c :
  /home/comp6733/contiki-git/core/./contiki.h :
@@ -73,4 +78,9 @@ obj_native/nbr-table.o: /home/comp6733/contiki-git/core/net/nbr-table.c \
  /home/comp6733/contiki-git/core/./net/mac/mac.h :
  /home/comp6733/contiki-git/core/./dev/radio.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
+ /home/comp6733/contiki-git/core/./net/ip/uip.h :
+ /home/comp6733/contiki-git/core/./net/ip/uipopt.h :
+ /home/comp6733/contiki-git/core/./net/ip/tcpip.h :
  /home/comp6733/contiki-git/core/./net/mac/framer.h :

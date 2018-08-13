@@ -41,6 +41,8 @@ obj_native/uip-icmp6.o: \
  /home/comp6733/contiki-git/core/./net/mac/mac.h \
  /home/comp6733/contiki-git/core/./dev/radio.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/mac/framer.h \
  /home/comp6733/contiki-git/core/./lib/list.h \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h \
@@ -92,6 +94,8 @@ obj_native/uip-icmp6.o: \
  /home/comp6733/contiki-git/core/./net/mac/mac.h :
  /home/comp6733/contiki-git/core/./dev/radio.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/mac/framer.h :
  /home/comp6733/contiki-git/core/./lib/list.h :
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h :

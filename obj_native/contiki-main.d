@@ -32,12 +32,15 @@ obj_native/contiki-main.o: \
  /home/comp6733/contiki-git/core/./net/mac/mac.h \
  /home/comp6733/contiki-git/core/./dev/radio.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
- /home/comp6733/contiki-git/core/./net/mac/framer.h \
- /home/comp6733/contiki-git/core/./ctk/ctk.h \
- /home/comp6733/contiki-git/core/./dev/serial-line.h \
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
+ /home/comp6733/contiki-git/core/./net/linkaddr.h \
  /home/comp6733/contiki-git/core/./net/ip/uip.h \
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h \
  /home/comp6733/contiki-git/core/./net/ip/tcpip.h \
+ /home/comp6733/contiki-git/core/./net/mac/framer.h \
+ /home/comp6733/contiki-git/core/./ctk/ctk.h \
+ /home/comp6733/contiki-git/core/./dev/serial-line.h \
  /home/comp6733/contiki-git/platform/native/./dev/button-sensor.h \
  /home/comp6733/contiki-git/core/./lib/sensors.h \
  /home/comp6733/contiki-git/platform/native/./dev/pir-sensor.h \
@@ -47,7 +50,6 @@ obj_native/contiki-main.o: \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-nd6.h \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-route.h \
  /home/comp6733/contiki-git/core/./net/nbr-table.h \
- /home/comp6733/contiki-git/core/./net/linkaddr.h \
  /home/comp6733/contiki-git/core/./lib/list.h \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h \
  /home/comp6733/contiki-git/core/./net/ip/uip-packetqueue.h \
@@ -61,8 +63,6 @@ obj_native/contiki-main.o: \
  /home/comp6733/contiki-git/core/./net/rime/broadcast.h \
  /home/comp6733/contiki-git/core/./net/rime/abc.h \
  /home/comp6733/contiki-git/core/./net/packetbuf.h \
- /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
- /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h \
  /home/comp6733/contiki-git/core/./net/rime/channel.h \
  /home/comp6733/contiki-git/core/./net/rime/chameleon.h \
@@ -118,12 +118,15 @@ obj_native/contiki-main.o: \
  /home/comp6733/contiki-git/core/./net/mac/mac.h :
  /home/comp6733/contiki-git/core/./dev/radio.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
- /home/comp6733/contiki-git/core/./net/mac/framer.h :
- /home/comp6733/contiki-git/core/./ctk/ctk.h :
- /home/comp6733/contiki-git/core/./dev/serial-line.h :
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
+ /home/comp6733/contiki-git/core/./net/linkaddr.h :
  /home/comp6733/contiki-git/core/./net/ip/uip.h :
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h :
  /home/comp6733/contiki-git/core/./net/ip/tcpip.h :
+ /home/comp6733/contiki-git/core/./net/mac/framer.h :
+ /home/comp6733/contiki-git/core/./ctk/ctk.h :
+ /home/comp6733/contiki-git/core/./dev/serial-line.h :
  /home/comp6733/contiki-git/platform/native/./dev/button-sensor.h :
  /home/comp6733/contiki-git/core/./lib/sensors.h :
  /home/comp6733/contiki-git/platform/native/./dev/pir-sensor.h :
@@ -133,7 +136,6 @@ obj_native/contiki-main.o: \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-nd6.h :
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-route.h :
  /home/comp6733/contiki-git/core/./net/nbr-table.h :
- /home/comp6733/contiki-git/core/./net/linkaddr.h :
  /home/comp6733/contiki-git/core/./lib/list.h :
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h :
  /home/comp6733/contiki-git/core/./net/ip/uip-packetqueue.h :
@@ -147,8 +149,6 @@ obj_native/contiki-main.o: \
  /home/comp6733/contiki-git/core/./net/rime/broadcast.h :
  /home/comp6733/contiki-git/core/./net/rime/abc.h :
  /home/comp6733/contiki-git/core/./net/packetbuf.h :
- /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
- /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h :
  /home/comp6733/contiki-git/core/./net/rime/channel.h :
  /home/comp6733/contiki-git/core/./net/rime/chameleon.h :

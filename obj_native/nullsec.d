@@ -9,8 +9,6 @@ obj_native/nullsec.o: /home/comp6733/contiki-git/core/net/llsec/nullsec.c \
  /home/comp6733/contiki-git/core/./net/linkaddr.h \
  /home/comp6733/contiki-git/core/./net/netstack.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
- /home/comp6733/contiki-git/core/./net/mac/framer.h \
- /home/comp6733/contiki-git/core/./net/packetbuf.h \
  /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
  /home/comp6733/contiki-git/core/./net/ip/uip.h \
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h \
@@ -40,6 +38,8 @@ obj_native/nullsec.o: /home/comp6733/contiki-git/core/net/llsec/nullsec.c \
  /home/comp6733/contiki-git/core/./sys/clock.h \
  /home/comp6733/contiki-git/core/./sys/energest.h \
  /home/comp6733/contiki-git/core/./sys/rtimer.h \
+ /home/comp6733/contiki-git/core/./net/mac/framer.h \
+ /home/comp6733/contiki-git/core/./net/packetbuf.h \
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h
 /home/comp6733/contiki-git/core/net/llsec/nullsec.c :
  /home/comp6733/contiki-git/core/./net/llsec/nullsec.h :
@@ -52,8 +52,6 @@ obj_native/nullsec.o: /home/comp6733/contiki-git/core/net/llsec/nullsec.c \
  /home/comp6733/contiki-git/core/./net/linkaddr.h :
  /home/comp6733/contiki-git/core/./net/netstack.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
- /home/comp6733/contiki-git/core/./net/mac/framer.h :
- /home/comp6733/contiki-git/core/./net/packetbuf.h :
  /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
  /home/comp6733/contiki-git/core/./net/ip/uip.h :
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h :
@@ -83,4 +81,6 @@ obj_native/nullsec.o: /home/comp6733/contiki-git/core/net/llsec/nullsec.c \
  /home/comp6733/contiki-git/core/./sys/clock.h :
  /home/comp6733/contiki-git/core/./sys/energest.h :
  /home/comp6733/contiki-git/core/./sys/rtimer.h :
+ /home/comp6733/contiki-git/core/./net/mac/framer.h :
+ /home/comp6733/contiki-git/core/./net/packetbuf.h :
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h :

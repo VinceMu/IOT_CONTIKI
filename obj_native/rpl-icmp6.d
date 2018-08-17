@@ -41,8 +41,6 @@ obj_native/rpl-icmp6.o: \
  /home/comp6733/contiki-git/core/./net/mac/mac.h \
  /home/comp6733/contiki-git/core/./dev/radio.h \
  /home/comp6733/contiki-git/core/./net/mac/rdc.h \
- /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
- /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/mac/framer.h \
  /home/comp6733/contiki-git/core/./lib/list.h \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h \
@@ -52,19 +50,17 @@ obj_native/rpl-icmp6.o: \
  /home/comp6733/contiki-git/core/./net/rpl/rpl-private.h \
  /home/comp6733/contiki-git/core/./net/rpl/rpl.h \
  /home/comp6733/contiki-git/core/./net/rpl/rpl-conf.h \
- /home/comp6733/contiki-git/core/./net/rpl/rpl-ns.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-engines.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-route.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/smrf.h \
- /home/comp6733/contiki-git/core/./net/ipv6/multicast/esmrf.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/roll-tm.h \
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-stats.h \
  /home/comp6733/contiki-git/core/./net/packetbuf.h \
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h \
- /home/comp6733/contiki-git/core/lib/random.h \
- /home/comp6733/contiki-git/core/./net/ip/uip-debug.h \
- /home/comp6733/contiki-git/core/./net/net-debug.h
+ /home/comp6733/contiki-git/core/./net/ip/uip-debug.h
  /home/comp6733/contiki-git/core/net/rpl/rpl-icmp6.c :
  /home/comp6733/contiki-git/core/./net/ip/tcpip.h :
  /home/comp6733/contiki-git/core/./contiki.h :
@@ -107,8 +103,6 @@ obj_native/rpl-icmp6.o: \
  /home/comp6733/contiki-git/core/./net/mac/mac.h :
  /home/comp6733/contiki-git/core/./dev/radio.h :
  /home/comp6733/contiki-git/core/./net/mac/rdc.h :
- /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
- /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/mac/framer.h :
  /home/comp6733/contiki-git/core/./lib/list.h :
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-nbr.h :
@@ -118,16 +112,14 @@ obj_native/rpl-icmp6.o: \
  /home/comp6733/contiki-git/core/./net/rpl/rpl-private.h :
  /home/comp6733/contiki-git/core/./net/rpl/rpl.h :
  /home/comp6733/contiki-git/core/./net/rpl/rpl-conf.h :
- /home/comp6733/contiki-git/core/./net/rpl/rpl-ns.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-engines.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-route.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/smrf.h :
- /home/comp6733/contiki-git/core/./net/ipv6/multicast/esmrf.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/roll-tm.h :
  /home/comp6733/contiki-git/core/./net/ipv6/multicast/uip-mcast6-stats.h :
  /home/comp6733/contiki-git/core/./net/packetbuf.h :
+ /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
+ /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h :
- /home/comp6733/contiki-git/core/lib/random.h :
  /home/comp6733/contiki-git/core/./net/ip/uip-debug.h :
- /home/comp6733/contiki-git/core/./net/net-debug.h :

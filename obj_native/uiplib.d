@@ -30,9 +30,7 @@ obj_native/uiplib.o: /home/comp6733/contiki-git/core/net/ip/uiplib.c \
  /home/comp6733/contiki-git/core/./sys/energest.h \
  /home/comp6733/contiki-git/core/./sys/rtimer.h \
  /home/comp6733/contiki-git/core/./net/ip/uiplib.h \
- /home/comp6733/contiki-git/core/./net/ip/uip-debug.h \
- /home/comp6733/contiki-git/core/./net/net-debug.h \
- /home/comp6733/contiki-git/core/./net/linkaddr.h
+ /home/comp6733/contiki-git/core/./net/ip/uip-debug.h
 /home/comp6733/contiki-git/core/net/ip/uiplib.c :
  /home/comp6733/contiki-git/core/./net/ip/uip.h :
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h :
@@ -66,5 +64,3 @@ obj_native/uiplib.o: /home/comp6733/contiki-git/core/net/ip/uiplib.c \
  /home/comp6733/contiki-git/core/./sys/rtimer.h :
  /home/comp6733/contiki-git/core/./net/ip/uiplib.h :
  /home/comp6733/contiki-git/core/./net/ip/uip-debug.h :
- /home/comp6733/contiki-git/core/./net/net-debug.h :
- /home/comp6733/contiki-git/core/./net/linkaddr.h :

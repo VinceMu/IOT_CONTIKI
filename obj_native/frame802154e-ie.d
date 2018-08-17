@@ -32,7 +32,7 @@ obj_native/frame802154e-ie.o: \
  /home/comp6733/contiki-git/core/./net/linkaddr.h \
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-asn.h \
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h \
- /home/comp6733/contiki-git/core/./net/net-debug.h \
+ /home/comp6733/contiki-git/core/./net/ip/uip-debug.h \
  /home/comp6733/contiki-git/core/./net/ip/uip.h \
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h \
  /home/comp6733/contiki-git/core/./net/ip/tcpip.h
@@ -69,7 +69,7 @@ obj_native/frame802154e-ie.o: \
  /home/comp6733/contiki-git/core/./net/linkaddr.h :
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-asn.h :
  /home/comp6733/contiki-git/core/./net/mac/tsch/tsch-conf.h :
- /home/comp6733/contiki-git/core/./net/net-debug.h :
+ /home/comp6733/contiki-git/core/./net/ip/uip-debug.h :
  /home/comp6733/contiki-git/core/./net/ip/uip.h :
  /home/comp6733/contiki-git/core/./net/ip/uipopt.h :
  /home/comp6733/contiki-git/core/./net/ip/tcpip.h :

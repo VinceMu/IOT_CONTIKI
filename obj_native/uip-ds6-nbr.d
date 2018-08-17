@@ -1,11 +1,9 @@
 obj_native/uip-ds6-nbr.o: \
  /home/comp6733/contiki-git/core/net/ipv6/uip-ds6-nbr.c \
  /home/comp6733/contiki-git/core/./lib/list.h \
- /home/comp6733/contiki-git/core/./net/link-stats.h \
- /home/comp6733/contiki-git/core/net/linkaddr.h \
+ /home/comp6733/contiki-git/core/./net/linkaddr.h \
  /home/comp6733/contiki-git/platform/native/./contiki-conf.h \
  /home/comp6733/contiki-git/platform/native/./ctk/ctk-curses.h \
- /home/comp6733/contiki-git/core/./net/linkaddr.h \
  /home/comp6733/contiki-git/core/./net/packetbuf.h \
  /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h \
  /home/comp6733/contiki-git/core/./net/mac/frame802154.h \
@@ -52,15 +50,12 @@ obj_native/uip-ds6-nbr.o: \
  /home/comp6733/contiki-git/core/./net/ipv6/uip-ds6-route.h \
  /home/comp6733/contiki-git/core/./net/ip/uip-packetqueue.h \
  /home/comp6733/contiki-git/core/./sys/ctimer.h \
- /home/comp6733/contiki-git/core/./net/ip/uip-debug.h \
- /home/comp6733/contiki-git/core/./net/net-debug.h
+ /home/comp6733/contiki-git/core/./net/ip/uip-debug.h
  /home/comp6733/contiki-git/core/net/ipv6/uip-ds6-nbr.c :
  /home/comp6733/contiki-git/core/./lib/list.h :
- /home/comp6733/contiki-git/core/./net/link-stats.h :
- /home/comp6733/contiki-git/core/net/linkaddr.h :
+ /home/comp6733/contiki-git/core/./net/linkaddr.h :
  /home/comp6733/contiki-git/platform/native/./contiki-conf.h :
  /home/comp6733/contiki-git/platform/native/./ctk/ctk-curses.h :
- /home/comp6733/contiki-git/core/./net/linkaddr.h :
  /home/comp6733/contiki-git/core/./net/packetbuf.h :
  /home/comp6733/contiki-git/core/./net/llsec/llsec802154.h :
  /home/comp6733/contiki-git/core/./net/mac/frame802154.h :
@@ -108,4 +103,3 @@ obj_native/uip-ds6-nbr.o: \
  /home/comp6733/contiki-git/core/./net/ip/uip-packetqueue.h :
  /home/comp6733/contiki-git/core/./sys/ctimer.h :
  /home/comp6733/contiki-git/core/./net/ip/uip-debug.h :
- /home/comp6733/contiki-git/core/./net/net-debug.h :

@@ -101,6 +101,7 @@ void updateUtcTime(uint32_t utctime){
 void utctime_response(){
   char buf[MAX_PAYLOAD_LEN];
   sprintf(buf,"%ld\n",getUtcTimeFromLocalTime());
+  uip_udp_packet_send(server_conn, buf, strlen(buf));
   timerSet = 0;
   ctimer_stop(&response_timer);
 }

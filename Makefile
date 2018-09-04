@@ -1,4 +1,4 @@
-CONTIKI_PROJECT=udp-server
+CONTIKI_PROJECT=prac4
 all: $(CONTIKI_PROJECT)
 
 

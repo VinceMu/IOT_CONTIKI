@@ -41,16 +41,19 @@
 #define MAX_PAYLOAD_LEN 120
 
 static struct uip_udp_conn *server_conn;
+static int timerSet=0; 
+static struct ctimer response_timer; 
 static struct ctimer utc_timer; 
 
-uint32 localutctime = 0;
+uint32_t localutctime = 0;
 
 PROCESS(udp_server_process, "UDP server process");
 AUTOSTART_PROCESSES(&resolv_process,&udp_server_process);
 
-uint32 getUtcTimeFromLocalTime();
+uint32_t getUtcTimeFromLocalTime();
 void utctime_tick();
-void updateUtcTime(uint32 utctime);
+void utctime_response();
+void updateUtcTime(uint32_t utctime);
 
 /*---------------------------------------------------------------------------*/
 static void
@@ -60,10 +63,17 @@ tcpip_handler(void)
   char buf[MAX_PAYLOAD_LEN];
 
   if(uip_newdata()) {
-    ((char *)uip_appdata)[uip_datalen()] = 0;
-    PRINTF("Server received: '%s' (RSSI: %d) from ", (char *)uip_appdata, (signed short)packetbuf_attr(PACKETBUF_ATTR_RSSI));
+    ((int *)uip_appdata)[uip_datalen()] = 0;
+    PRINTF("Server received: '%d' (RSSI: %d) from ", (char *)uip_appdata, (char *)packetbuf_attr(PACKETBUF_ATTR_RSSI));
     PRINT6ADDR(&UIP_IP_BUF->srcipaddr);
     PRINTF("\n");
+    updateUtcTime(*(uint32_t *)uip_appdata);
+
+    if(timerSet ==0){
+	  printf("response timer set\n");
+	  ctimer_set(&response_timer, 5*CLOCK_SECOND, utctime_response, NULL);
+	  timerSet = 1; 
+    }
 
     uip_ipaddr_copy(&server_conn->ripaddr, &UIP_IP_BUF->srcipaddr);
     PRINTF("Responding with message: ");
@@ -71,21 +81,28 @@ tcpip_handler(void)
     PRINTF("%s\n\r", buf);
 
     uip_udp_packet_send(server_conn, buf, strlen(buf));
+
     /* Restore server connection to allow data from any node */
     memset(&server_conn->ripaddr, 0, sizeof(server_conn->ripaddr));
   }
 }
 
-uint32 getUtcTimeFromLocalTime(){
+uint32_t getUtcTimeFromLocalTime(){
 	return localutctime; 
 }
 void utctime_tick(){
 	localutctime++;
 	ctimer_reset(&utc_timer);
 }
-void updateUtcTime(uint32 utctime){
-	printf("new utc time is %d",utctime);
+void updateUtcTime(uint32_t utctime){
+	printf("new utc time is %ld",utctime);
 	localutctime = utctime; 
+}
+void utctime_response(){
+  char buf[MAX_PAYLOAD_LEN];
+  sprintf(buf,"%ld\n",getUtcTimeFromLocalTime());
+  timerSet = 0;
+  ctimer_stop(&response_timer);
 }
 
 /*---------------------------------------------------------------------------*/
@@ -130,7 +147,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
 
   //Create UDP socket and bind to port 3000
   //server_conn = udp_new(NULL, UIP_HTONS(3001), NULL);
-  server_conn = udp_new(NULL, HTONS(0), NULL);
+  server_conn = udp_new(NULL, UIP_HTONS(0), NULL);
   udp_bind(server_conn, UIP_HTONS(3000));
 
   while(1) {

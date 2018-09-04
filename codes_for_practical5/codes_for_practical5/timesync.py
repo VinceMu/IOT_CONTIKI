@@ -41,7 +41,7 @@ def udpSendThread():
     # send UDP packet to nodes
     # change the IP Address with your sensorTag accordingly.
     # you may start with one sensortag.
-    sock.sendto(struct.pack("I", timestamp), ("Address For Sensortag", UDP_TIMESYNC_PORT))
+    sock.sendto(struct.pack("I", timestamp), ("aaaa:212:4b00:f18:e384", UDP_TIMESYNC_PORT))
     # sock.sendto(struct.pack("I", timestamp), ("Address For Sensortag2", UDP_TIMESYNC_PORT))
     
     # sleep for some seconds
